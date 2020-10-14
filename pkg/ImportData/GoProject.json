@@ -1,0 +1,99 @@
+{
+  "template": {
+    "name": "",
+    "isDir": true,
+    "placeholders": {
+      "USER_NAME": "Champ",
+      "USER_EMAIL": "Champ@championtek.com.tw",
+      "EXPOSE_PORT": "8080"
+    },
+    "allPlaceholder": [],
+    "fileTemplates": {
+      "go.mod": "Go Mod",
+      "main.go": "Go Main",
+      "Dockerfile": "Docker File",
+      ".gitignore": "Gitignore"
+    },
+    "realChildren": [
+      {
+        "name": "cmd",
+        "isDir": true,
+        "allPlaceholder": [],
+        "realChildren": [
+          {
+            "name": "mian.go",
+            "isDir": false,
+            "allPlaceholder": [],
+            "template": "Go Main",
+            "realChildren": []
+          }
+        ]
+      },
+      {
+        "name": "configs",
+        "isDir": true,
+        "allPlaceholder": [],
+        "realChildren": []
+      },
+      {
+        "name": "modules",
+        "isDir": true,
+        "allPlaceholder": [],
+        "realChildren": [
+          {
+            "name": "graphql",
+            "isDir": true,
+            "allPlaceholder": [],
+            "realChildren": []
+          },
+          {
+            "name": "restful",
+            "isDir": true,
+            "allPlaceholder": [],
+            "realChildren": []
+          }
+        ]
+      },
+      {
+        "name": "pkg",
+        "isDir": true,
+        "allPlaceholder": [],
+        "realChildren": [
+          {
+            "name": "database",
+            "isDir": true,
+            "allPlaceholder": [],
+            "realChildren": []
+          },
+          {
+            "name": "http",
+            "isDir": true,
+            "allPlaceholder": [],
+            "realChildren": []
+          }
+        ]
+      },
+      {
+        "name": "go.mod",
+        "isDir": false,
+        "allPlaceholder": [],
+        "realChildren": []
+      },
+      {
+        "name": "Dockerfile",
+        "isDir": false,
+        "allPlaceholder": [],
+        "template": "Docker File",
+        "realChildren": []
+      },
+      {
+        "name": ".gitignore",
+        "isDir": false,
+        "allPlaceholder": [],
+        "realChildren": []
+      }
+    ]
+  },
+  "language": "java",
+  "templateName": "GoProject"
+}
